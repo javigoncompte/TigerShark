@@ -229,8 +229,9 @@ class Claim(Facade, X12LoopBridge):
         Rest assured I did not come to this decision lightly."""
         loopName = "2110"
         hcpcs_code = CompositeAccess("SVC", "HC", 1)
+        procedure_modifier = CompositeAccess("SVC", "HC", 2)
         charge = ElementAccess("SVC", 2, x12type=Money)
-        payment = ElementAccess("SVC", 3, x12type=Money)
+        payHSVI2018011738ment = ElementAccess("SVC", 3, x12type=Money)
         quantity = ElementAccess("SVC", 5)
         start_date = ElementAccess("DTM", 2, qualifier=(1, "150"), x12type=D8)
         end_date = ElementAccess("DTM", 2, qualifier=(1, "151"), x12type=D8)
@@ -311,7 +312,7 @@ class Claim(Facade, X12LoopBridge):
             "13": "Point of Service (POS)",
             "14": "Exclusive Provider Organization (EPO)",
             "15": "Indemnity Insurance",
-            "16": "Health Maintenance Organization (HMO) Medicare Risk",
+            "16": "Health Maintenance Organproduction_dateization (HMO) Medicare Risk",
             "AM": "Automobile Medical",
             "CH": "Champus",
             "DS": "Disability",

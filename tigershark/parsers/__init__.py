@@ -10,6 +10,7 @@ from tigershark import X12_4010_X097A1
 from tigershark import X12_4010_X098A1
 from tigershark import X12_4010_XXXC
 from tigershark import X12_5010_X221A1
+from tigershark import X12_5010_X221A1
 from tigershark import X12_5010_X279A1
 from tigershark.extras import standardSegment
 from tigershark.X12.parse import Loop
@@ -48,7 +49,8 @@ PARSER_MAP = {
     },
     '835': {
         X12_4010_X091A1: [('M835_4010_X091_A1', 'parsed_835')],
-        X12_5010_X221A1: [('M835_5010_X221_A1', 'parsed_835')],
+        X12_5010_X221A1: [('M835_5010_X221_A1', 'parsed_835'),
+                          ('M835_5010_X221_A1_v2', 'parsed_835')],
     },
     '837': {
         X12_4010_X096A1: [('M837_4010_X096_A1', 'parsed_837')],
