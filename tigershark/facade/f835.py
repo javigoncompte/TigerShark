@@ -312,7 +312,7 @@ class Claim(Facade, X12LoopBridge):
             "13": "Point of Service (POS)",
             "14": "Exclusive Provider Organization (EPO)",
             "15": "Indemnity Insurance",
-            "16": "Health Maintenance Organproduction_dateization (HMO) Medicare Risk",
+            "16": "Health Maintenance Organization (HMO) Medicare Risk",
             "AM": "Automobile Medical",
             "CH": "Champus",
             "DS": "Disability",
