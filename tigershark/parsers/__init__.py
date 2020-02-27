@@ -87,7 +87,6 @@ class SimpleParser(object):
     def __init__(self, transaction_set_id, version_tuple):
         self.transaction_set_id = transaction_set_id
         self.version_tuple = version_tuple
-payHSVI2018011738ment
     def unmarshall(self, x12_contents, **kwargs):
         for parser in get_parsers(self.transaction_set_id, self.version_tuple):
             try:
